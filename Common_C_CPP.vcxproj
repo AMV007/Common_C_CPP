@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugStatic|Win32">
+      <Configuration>DebugStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1D45BED1-D8A8-4004-AF47-32774B056230}</ProjectGuid>
+    <RootNamespace>Common_C_CPP</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\Program Files\Intel\Compiler\11.1\038\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;COMMON_C_CPP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;COMMON_C_CPP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;COMMON_C_CPP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="COMMON\c_file.cpp" />
+    <ClCompile Include="COMMON\c_thread.cpp" />
+    <ClCompile Include="Common_C_CPP.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="unused.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="IP\c_ftp_client.cpp" />
+    <ClCompile Include="IP\c_ping.cpp" />
+    <ClCompile Include="IP\c_pop3.cpp" />
+    <ClCompile Include="IP\c_smtp.cpp" />
+    <ClCompile Include="IP\c_sock_base.cpp" />
+    <ClCompile Include="IP\c_sock_compl.cpp" />
+    <ClCompile Include="IP\c_sock_over.cpp" />
+    <ClCompile Include="IP\channel.cpp" />
+    <ClCompile Include="IP\DownloadPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="IP\pchannel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CRYPT\base64.cpp" />
+    <ClCompile Include="CRYPT\PUBLIC_KEY\dhm.cpp" />
+    <ClCompile Include="CRYPT\PUBLIC_KEY\rsa.cpp" />
+    <ClCompile Include="CRYPT\COMMON\bignum.cpp" />
+    <ClCompile Include="CRYPT\COMMON\havege.cpp" />
+    <ClCompile Include="CRYPT\COMMON\timing.cpp" />
+    <ClCompile Include="CRYPT\CIPHER\aes.cpp" />
+    <ClCompile Include="CRYPT\CIPHER\arc4.cpp" />
+    <ClCompile Include="CRYPT\CIPHER\camellia.cpp" />
+    <ClCompile Include="CRYPT\CIPHER\des.cpp" />
+    <ClCompile Include="CRYPT\CIPHER\xtea.cpp" />
+    <ClCompile Include="CRYPT\HASH\md2.cpp" />
+    <ClCompile Include="CRYPT\HASH\md4.cpp" />
+    <ClCompile Include="CRYPT\HASH\md5.cpp" />
+    <ClCompile Include="CRYPT\HASH\sha1.cpp" />
+    <ClCompile Include="CRYPT\HASH\sha2.cpp" />
+    <ClCompile Include="CRYPT\HASH\sha4.cpp" />
+    <ClCompile Include="CRYPT\ENCODING\c_codepage.cpp" />
+    <ClCompile Include="CRYPT\ENCODING\c_encoding.cpp" />
+    <ClCompile Include="EMBEDDED\AlteraByteBlaster.cpp" />
+    <ClCompile Include="EMBEDDED\AT45DB161Flash.cpp" />
+    <ClCompile Include="DEVS\AUDIO\c_wave.cpp" />
+    <ClCompile Include="DEVS\AUDIO\WINDOWS\c_audio_in.cpp" />
+    <ClCompile Include="DEVS\AUDIO\WINDOWS\c_audio_out.cpp" />
+    <ClCompile Include="DEVS\PORT\PARALLEL\WINDOWS\Parallel.cpp" />
+    <ClCompile Include="DEVS\PORT\SERIAL\WINDOWS\Serial.cpp" />
+    <ClCompile Include="DEVS\USB\WINDOWS\FIFO_Bulk.cpp" />
+    <ClCompile Include="DEVS\USB\WINDOWS\lusb.cpp" />
+    <ClCompile Include="arch\bzip2\c_bzip2.cpp" />
+    <ClCompile Include="COMMON\c_ListPtr.cpp" />
+    <ClCompile Include="COMMON\WINDOWS\add_log.cpp" />
+    <ClCompile Include="COMMON\WINDOWS\c_log.cpp" />
+    <ClCompile Include="COMMON\WINDOWS\reg_work.cpp" />
+    <ClCompile Include="TEST\bzip_test.cpp" />
+    <ClCompile Include="TEST\c_audio_in_test.cpp" />
+    <ClCompile Include="TEST\c_audio_out_test.cpp" />
+    <ClCompile Include="TEST\c_fft1D_templ_test.cpp" />
+    <ClCompile Include="TEST\c_filter_test.cpp" />
+    <ClCompile Include="TEST\rsa_test.cpp" />
+    <ClCompile Include="TEST\SMTP_POP3_test.cpp" />
+    <ClCompile Include="DSP\FILTER\c_filter.cpp" />
+    <ClCompile Include="DSP\FOURIER\c_fft1D2R.cpp" />
+    <ClCompile Include="DSP\FOURIER\c_fft1D_MIXED.cpp" />
+    <ClCompile Include="DSP\FOURIER\c_fft1D_PRIME.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="COMMON\c_event.h" />
+    <ClInclude Include="COMMON\c_mutex.h" />
+    <ClInclude Include="COMMON\c_semaphore.h" />
+    <ClInclude Include="Common_C_CPP.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="IP\c_ftp_client.h" />
+    <ClInclude Include="IP\c_ping.h" />
+    <ClInclude Include="IP\c_pop3.h" />
+    <ClInclude Include="IP\c_smtp.h" />
+    <ClInclude Include="IP\c_sock_base.h" />
+    <ClInclude Include="IP\c_sock_compl.h" />
+    <ClInclude Include="IP\c_sock_over.h" />
+    <ClInclude Include="IP\channel.h" />
+    <ClInclude Include="IP\DownloadPage.h" />
+    <ClInclude Include="IP\pchannel.h" />
+    <ClInclude Include="CRYPT\base64.h" />
+    <ClInclude Include="CRYPT\PUBLIC_KEY\dhm.h" />
+    <ClInclude Include="CRYPT\PUBLIC_KEY\rsa.h" />
+    <ClInclude Include="CRYPT\COMMON\bignum.h" />
+    <ClInclude Include="CRYPT\COMMON\bn_mul.h" />
+    <ClInclude Include="CRYPT\COMMON\havege.h" />
+    <ClInclude Include="CRYPT\CIPHER\aes.h" />
+    <ClInclude Include="CRYPT\CIPHER\arc4.h" />
+    <ClInclude Include="CRYPT\CIPHER\camellia.h" />
+    <ClInclude Include="CRYPT\CIPHER\des.h" />
+    <ClInclude Include="CRYPT\CIPHER\xtea.h" />
+    <ClInclude Include="CRYPT\HASH\md2.h" />
+    <ClInclude Include="CRYPT\HASH\md4.h" />
+    <ClInclude Include="CRYPT\HASH\md5.h" />
+    <ClInclude Include="CRYPT\HASH\sha1.h" />
+    <ClInclude Include="CRYPT\HASH\sha2.h" />
+    <ClInclude Include="CRYPT\HASH\sha4.h" />
+    <ClInclude Include="CRYPT\ENCODING\c_codepage.h" />
+    <ClInclude Include="CRYPT\ENCODING\c_encoding.h" />
+    <ClInclude Include="EMBEDDED\AlteraByteBlaster.h" />
+    <ClInclude Include="EMBEDDED\AT45DB161Flash.h" />
+    <ClInclude Include="DEVS\AUDIO\c_aud_generator.h" />
+    <ClInclude Include="DEVS\AUDIO\c_wave.h" />
+    <ClInclude Include="DEVS\AUDIO\WINDOWS\c_audio_in.h" />
+    <ClInclude Include="DEVS\AUDIO\WINDOWS\c_audio_out.h" />
+    <ClInclude Include="DEVS\AUDIO\WINDOWS\c_wave_param.h" />
+    <ClInclude Include="DEVS\PORT\PARALLEL\WINDOWS\Parallel.h" />
+    <ClInclude Include="DEVS\PORT\SERIAL\WINDOWS\Serial.h" />
+    <ClInclude Include="DEVS\PORT\WINDOWS\dlportio.h" />
+    <ClInclude Include="DEVS\USB\WINDOWS\FIFO_Bulk.h" />
+    <ClInclude Include="DEVS\USB\WINDOWS\lusb.h" />
+    <ClInclude Include="DEVS\USB\WINDOWS\USB_defs.h" />
+    <ClInclude Include="arch\bzip2\c_bzip2.h" />
+    <ClInclude Include="WTL\WM\CScroolDialog.h" />
+    <ClInclude Include="COMMON\add_log.h" />
+    <ClInclude Include="COMMON\c_FIFO.h" />
+    <ClInclude Include="COMMON\c_file.h" />
+    <ClInclude Include="COMMON\c_List.h" />
+    <ClInclude Include="COMMON\c_ListPtr.h" />
+    <ClInclude Include="COMMON\c_thread.h" />
+    <ClInclude Include="COMMON\Compatability.h" />
+    <ClInclude Include="COMMON\interface_my.h" />
+    <ClInclude Include="COMMON\std_types.h" />
+    <ClInclude Include="COMMON\WINDOWS\c_log.h" />
+    <ClInclude Include="COMMON\WINDOWS\reg_work.h" />
+    <ClInclude Include="DSP\c_generator.h" />
+    <ClInclude Include="DSP\FILTER\c_filter.h" />
+    <ClInclude Include="DSP\FOURIER\c_fft1D2R.h" />
+    <ClInclude Include="DSP\FOURIER\c_fft1D2R_templ.h" />
+    <ClInclude Include="DSP\FOURIER\c_fft1D_MIXED.h" />
+    <ClInclude Include="DSP\FOURIER\c_fft1D_PRIME.h" />
+    <ClInclude Include="DSP\FOURIER\FFTW\c_fftw.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

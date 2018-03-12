@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="IP">
+      <UniqueIdentifier>{49873ce6-8fee-40fe-a971-cf313e28cc28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IP\Header Files">
+      <UniqueIdentifier>{1236d708-be41-4644-ac03-46c975a231df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IP\Source Files">
+      <UniqueIdentifier>{6febf8db-b338-4418-8711-3274d4d238c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CRYPT">
+      <UniqueIdentifier>{d3a9fbc9-1e1b-4648-b405-f0f24becc694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CRYPT\PUBLIC_KEY">
+      <UniqueIdentifier>{f5b5a528-cd32-4861-b059-78e9adf50640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CRYPT\COMMON">
+      <UniqueIdentifier>{2a9036c4-5d39-4cb4-9c47-e4d7ae28dc57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CRYPT\CIPHER">
+      <UniqueIdentifier>{772700d0-68b1-4c04-a6e2-ebf9e71ce8bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CRYPT\HASH">
+      <UniqueIdentifier>{deaef404-b37c-41ab-bed3-bceb3ed39669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CRYPT\ENCODING">
+      <UniqueIdentifier>{0d812370-beee-4762-831a-821ee8ccaf63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EMBEDDED">
+      <UniqueIdentifier>{f4322cad-050a-4571-a2e2-efbd48eed20f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEVS">
+      <UniqueIdentifier>{f59a2ccb-345e-4d2d-b059-e39271b5c575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEVS\AUDIO">
+      <UniqueIdentifier>{c6d8c231-bd4e-4d17-8cb5-d4c77ea7f1c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEVS\AUDIO\WINDOWS">
+      <UniqueIdentifier>{e9d8de4d-c0f8-495d-972a-3e453ed5f4f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEVS\PORT">
+      <UniqueIdentifier>{482f82d8-d49a-4dfb-bdd4-8279b3cc65ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEVS\PORT\PARALLEL">
+      <UniqueIdentifier>{5452e0b1-1a10-4df9-ad03-eaefe1f5c11d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEVS\PORT\PARALLEL\WINDOWS">
+      <UniqueIdentifier>{dc6116c0-4ef5-4415-89e3-a9c7bebac2ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEVS\PORT\SERIAL">
+      <UniqueIdentifier>{5b0c06c4-88d9-4db7-a3d6-3c0e5ce0050f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEVS\PORT\SERIAL\WINDOWS">
+      <UniqueIdentifier>{b77dbf67-4fd8-4046-8a85-f24d50ff2232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEVS\PORT\WINDOWS">
+      <UniqueIdentifier>{9229774d-64ae-4e1a-ab74-cab9c31c3441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEVS\USB">
+      <UniqueIdentifier>{edb07a8f-864e-4f42-ac31-f29b149f0c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEVS\USB\WINDOWS">
+      <UniqueIdentifier>{20cb3bcd-7caf-440b-8478-5f2d5bc5fe01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ARCH">
+      <UniqueIdentifier>{c0178ba5-cafd-4cee-8f1e-b28f6d63aa50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ARCH\bzip2">
+      <UniqueIdentifier>{741a7362-ab77-4875-8ded-6cc537012d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WTL">
+      <UniqueIdentifier>{7c834b65-967b-4a3c-a3f9-934e5e0f2f9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WTL\WM">
+      <UniqueIdentifier>{bb36b0c3-8393-4ca7-8187-1e17c1f83966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEST">
+      <UniqueIdentifier>{1a7d792f-2e61-455b-bed8-30d0aee68b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DSP">
+      <UniqueIdentifier>{9ef899c1-b81b-4dff-95c2-2cbe3659991d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DSP\FILTER">
+      <UniqueIdentifier>{201e2923-ba33-4b68-bee5-bd8f9ba13464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DSP\FOURIER">
+      <UniqueIdentifier>{495f3dfc-20df-42a5-8eed-137fe157be7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DSP\FOURIER\FFTW">
+      <UniqueIdentifier>{07a79ac6-c144-4d21-a1bf-f382eae43a83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="COMMON">
+      <UniqueIdentifier>{ee342e65-27bc-46c1-9782-11c34c6a7ee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="COMMON\WINDOWS">
+      <UniqueIdentifier>{abe7f7d3-1c96-418d-9b6d-f12432787555}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common_C_CPP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unused.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\c_ftp_client.cpp">
+      <Filter>IP\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\c_ping.cpp">
+      <Filter>IP\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\c_pop3.cpp">
+      <Filter>IP\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\c_smtp.cpp">
+      <Filter>IP\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\c_sock_base.cpp">
+      <Filter>IP\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\c_sock_compl.cpp">
+      <Filter>IP\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\c_sock_over.cpp">
+      <Filter>IP\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\channel.cpp">
+      <Filter>IP\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\DownloadPage.cpp">
+      <Filter>IP\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IP\pchannel.cpp">
+      <Filter>IP\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\base64.cpp">
+      <Filter>CRYPT</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\PUBLIC_KEY\dhm.cpp">
+      <Filter>CRYPT\PUBLIC_KEY</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\PUBLIC_KEY\rsa.cpp">
+      <Filter>CRYPT\PUBLIC_KEY</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\COMMON\bignum.cpp">
+      <Filter>CRYPT\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\COMMON\havege.cpp">
+      <Filter>CRYPT\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\COMMON\timing.cpp">
+      <Filter>CRYPT\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\CIPHER\aes.cpp">
+      <Filter>CRYPT\CIPHER</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\CIPHER\arc4.cpp">
+      <Filter>CRYPT\CIPHER</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\CIPHER\camellia.cpp">
+      <Filter>CRYPT\CIPHER</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\CIPHER\des.cpp">
+      <Filter>CRYPT\CIPHER</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\CIPHER\xtea.cpp">
+      <Filter>CRYPT\CIPHER</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\HASH\md2.cpp">
+      <Filter>CRYPT\HASH</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\HASH\md4.cpp">
+      <Filter>CRYPT\HASH</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\HASH\md5.cpp">
+      <Filter>CRYPT\HASH</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\HASH\sha1.cpp">
+      <Filter>CRYPT\HASH</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\HASH\sha2.cpp">
+      <Filter>CRYPT\HASH</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\HASH\sha4.cpp">
+      <Filter>CRYPT\HASH</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\ENCODING\c_codepage.cpp">
+      <Filter>CRYPT\ENCODING</Filter>
+    </ClCompile>
+    <ClCompile Include="CRYPT\ENCODING\c_encoding.cpp">
+      <Filter>CRYPT\ENCODING</Filter>
+    </ClCompile>
+    <ClCompile Include="EMBEDDED\AlteraByteBlaster.cpp">
+      <Filter>EMBEDDED</Filter>
+    </ClCompile>
+    <ClCompile Include="EMBEDDED\AT45DB161Flash.cpp">
+      <Filter>EMBEDDED</Filter>
+    </ClCompile>
+    <ClCompile Include="DEVS\AUDIO\c_wave.cpp">
+      <Filter>DEVS\AUDIO</Filter>
+    </ClCompile>
+    <ClCompile Include="DEVS\AUDIO\WINDOWS\c_audio_in.cpp">
+      <Filter>DEVS\AUDIO\WINDOWS</Filter>
+    </ClCompile>
+    <ClCompile Include="DEVS\AUDIO\WINDOWS\c_audio_out.cpp">
+      <Filter>DEVS\AUDIO\WINDOWS</Filter>
+    </ClCompile>
+    <ClCompile Include="DEVS\PORT\PARALLEL\WINDOWS\Parallel.cpp">
+      <Filter>DEVS\PORT\PARALLEL\WINDOWS</Filter>
+    </ClCompile>
+    <ClCompile Include="DEVS\PORT\SERIAL\WINDOWS\Serial.cpp">
+      <Filter>DEVS\PORT\SERIAL\WINDOWS</Filter>
+    </ClCompile>
+    <ClCompile Include="DEVS\USB\WINDOWS\FIFO_Bulk.cpp">
+      <Filter>DEVS\USB\WINDOWS</Filter>
+    </ClCompile>
+    <ClCompile Include="DEVS\USB\WINDOWS\lusb.cpp">
+      <Filter>DEVS\USB\WINDOWS</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\bzip2\c_bzip2.cpp">
+      <Filter>ARCH\bzip2</Filter>
+    </ClCompile>
+    <ClCompile Include="TEST\bzip_test.cpp">
+      <Filter>TEST</Filter>
+    </ClCompile>
+    <ClCompile Include="TEST\c_audio_in_test.cpp">
+      <Filter>TEST</Filter>
+    </ClCompile>
+    <ClCompile Include="TEST\c_audio_out_test.cpp">
+      <Filter>TEST</Filter>
+    </ClCompile>
+    <ClCompile Include="TEST\c_fft1D_templ_test.cpp">
+      <Filter>TEST</Filter>
+    </ClCompile>
+    <ClCompile Include="TEST\c_filter_test.cpp">
+      <Filter>TEST</Filter>
+    </ClCompile>
+    <ClCompile Include="TEST\rsa_test.cpp">
+      <Filter>TEST</Filter>
+    </ClCompile>
+    <ClCompile Include="TEST\SMTP_POP3_test.cpp">
+      <Filter>TEST</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\FILTER\c_filter.cpp">
+      <Filter>DSP\FILTER</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\FOURIER\c_fft1D2R.cpp">
+      <Filter>DSP\FOURIER</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\FOURIER\c_fft1D_MIXED.cpp">
+      <Filter>DSP\FOURIER</Filter>
+    </ClCompile>
+    <ClCompile Include="DSP\FOURIER\c_fft1D_PRIME.cpp">
+      <Filter>DSP\FOURIER</Filter>
+    </ClCompile>
+    <ClCompile Include="COMMON\c_file.cpp">
+      <Filter>COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="COMMON\c_thread.cpp">
+      <Filter>COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="COMMON\WINDOWS\add_log.cpp">
+      <Filter>COMMON\WINDOWS</Filter>
+    </ClCompile>
+    <ClCompile Include="COMMON\WINDOWS\c_log.cpp">
+      <Filter>COMMON\WINDOWS</Filter>
+    </ClCompile>
+    <ClCompile Include="COMMON\WINDOWS\reg_work.cpp">
+      <Filter>COMMON\WINDOWS</Filter>
+    </ClCompile>
+    <ClCompile Include="COMMON\c_ListPtr.cpp">
+      <Filter>COMMON</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common_C_CPP.h">
+      <Filter>Source Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Source Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IP\c_ftp_client.h">
+      <Filter>IP\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IP\c_ping.h">
+      <Filter>IP\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IP\c_pop3.h">
+      <Filter>IP\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IP\c_smtp.h">
+      <Filter>IP\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IP\c_sock_base.h">
+      <Filter>IP\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IP\c_sock_compl.h">
+      <Filter>IP\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IP\c_sock_over.h">
+      <Filter>IP\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IP\channel.h">
+      <Filter>IP\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IP\DownloadPage.h">
+      <Filter>IP\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IP\pchannel.h">
+      <Filter>IP\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\base64.h">
+      <Filter>CRYPT</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\PUBLIC_KEY\dhm.h">
+      <Filter>CRYPT\PUBLIC_KEY</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\PUBLIC_KEY\rsa.h">
+      <Filter>CRYPT\PUBLIC_KEY</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\COMMON\bignum.h">
+      <Filter>CRYPT\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\COMMON\bn_mul.h">
+      <Filter>CRYPT\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\COMMON\havege.h">
+      <Filter>CRYPT\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\CIPHER\aes.h">
+      <Filter>CRYPT\CIPHER</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\CIPHER\arc4.h">
+      <Filter>CRYPT\CIPHER</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\CIPHER\camellia.h">
+      <Filter>CRYPT\CIPHER</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\CIPHER\des.h">
+      <Filter>CRYPT\CIPHER</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\CIPHER\xtea.h">
+      <Filter>CRYPT\CIPHER</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\HASH\md2.h">
+      <Filter>CRYPT\HASH</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\HASH\md4.h">
+      <Filter>CRYPT\HASH</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\HASH\md5.h">
+      <Filter>CRYPT\HASH</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\HASH\sha1.h">
+      <Filter>CRYPT\HASH</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\HASH\sha2.h">
+      <Filter>CRYPT\HASH</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\HASH\sha4.h">
+      <Filter>CRYPT\HASH</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\ENCODING\c_codepage.h">
+      <Filter>CRYPT\ENCODING</Filter>
+    </ClInclude>
+    <ClInclude Include="CRYPT\ENCODING\c_encoding.h">
+      <Filter>CRYPT\ENCODING</Filter>
+    </ClInclude>
+    <ClInclude Include="EMBEDDED\AlteraByteBlaster.h">
+      <Filter>EMBEDDED</Filter>
+    </ClInclude>
+    <ClInclude Include="EMBEDDED\AT45DB161Flash.h">
+      <Filter>EMBEDDED</Filter>
+    </ClInclude>
+    <ClInclude Include="DEVS\AUDIO\c_aud_generator.h">
+      <Filter>DEVS\AUDIO</Filter>
+    </ClInclude>
+    <ClInclude Include="DEVS\AUDIO\c_wave.h">
+      <Filter>DEVS\AUDIO</Filter>
+    </ClInclude>
+    <ClInclude Include="DEVS\AUDIO\WINDOWS\c_audio_in.h">
+      <Filter>DEVS\AUDIO\WINDOWS</Filter>
+    </ClInclude>
+    <ClInclude Include="DEVS\AUDIO\WINDOWS\c_audio_out.h">
+      <Filter>DEVS\AUDIO\WINDOWS</Filter>
+    </ClInclude>
+    <ClInclude Include="DEVS\AUDIO\WINDOWS\c_wave_param.h">
+      <Filter>DEVS\AUDIO\WINDOWS</Filter>
+    </ClInclude>
+    <ClInclude Include="DEVS\PORT\PARALLEL\WINDOWS\Parallel.h">
+      <Filter>DEVS\PORT\PARALLEL\WINDOWS</Filter>
+    </ClInclude>
+    <ClInclude Include="DEVS\PORT\SERIAL\WINDOWS\Serial.h">
+      <Filter>DEVS\PORT\SERIAL\WINDOWS</Filter>
+    </ClInclude>
+    <ClInclude Include="DEVS\PORT\WINDOWS\dlportio.h">
+      <Filter>DEVS\PORT\WINDOWS</Filter>
+    </ClInclude>
+    <ClInclude Include="DEVS\USB\WINDOWS\FIFO_Bulk.h">
+      <Filter>DEVS\USB\WINDOWS</Filter>
+    </ClInclude>
+    <ClInclude Include="DEVS\USB\WINDOWS\lusb.h">
+      <Filter>DEVS\USB\WINDOWS</Filter>
+    </ClInclude>
+    <ClInclude Include="DEVS\USB\WINDOWS\USB_defs.h">
+      <Filter>DEVS\USB\WINDOWS</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\bzip2\c_bzip2.h">
+      <Filter>ARCH\bzip2</Filter>
+    </ClInclude>
+    <ClInclude Include="WTL\WM\CScroolDialog.h">
+      <Filter>WTL\WM</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\interface_my.h">
+      <Filter>CRYPT\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\c_generator.h">
+      <Filter>DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\FILTER\c_filter.h">
+      <Filter>DSP\FILTER</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\FOURIER\c_fft1D2R.h">
+      <Filter>DSP\FOURIER</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\FOURIER\c_fft1D2R_templ.h">
+      <Filter>DSP\FOURIER</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\FOURIER\c_fft1D_MIXED.h">
+      <Filter>DSP\FOURIER</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\FOURIER\c_fft1D_PRIME.h">
+      <Filter>DSP\FOURIER</Filter>
+    </ClInclude>
+    <ClInclude Include="DSP\FOURIER\FFTW\c_fftw.h">
+      <Filter>DSP\FOURIER\FFTW</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\c_event.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\c_mutex.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\c_semaphore.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\WINDOWS\reg_work.h">
+      <Filter>COMMON\WINDOWS</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\WINDOWS\c_log.h">
+      <Filter>COMMON\WINDOWS</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\add_log.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\c_FIFO.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\c_thread.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\c_file.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\c_List.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\c_ListPtr.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\Compatability.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="COMMON\std_types.h">
+      <Filter>COMMON</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
